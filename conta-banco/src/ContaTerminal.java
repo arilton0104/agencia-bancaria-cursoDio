@@ -5,9 +5,13 @@ public class ContaTerminal {
         double valorSolicitado = 18;
 
         // Verificação do saldo
-        if (saldo > valorSolicitado) {
+        if (saldo > valorSolicitado) { 
+            
+            // Aqui se saldo for maior que valorSolicitado execute a proxima etapa 
             saldo = saldo - valorSolicitado;
             System.out.println("Saldo atualizado: " + saldo);
+
+            // Se não execute essa etapa, que no caso é o else
         } else {
             System.out.println("Saldo insuficiente");
         }
